@@ -1,4 +1,5 @@
 import React from 'react';
+import MyInfo from './MyInfo'
 //import './App.css';
 
 function App() {
