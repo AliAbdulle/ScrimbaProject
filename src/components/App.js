@@ -1,15 +1,14 @@
 import React from 'react';
 import MyInfo from './MyInfo'
+import Nav from './Nav'
 //import './App.css';
 
 function App() {
+  
   return (
     <div className="App">
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
+      <Nav />
+      <MyInfo />
     </div>
   );
 }
