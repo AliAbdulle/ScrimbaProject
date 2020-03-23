@@ -8,7 +8,7 @@ function App() {
   
   return (
     <div className="App">
-      <Nav />
+      <Nav className="nav-bar"/>
       <TodoItem className="Todo-list"/>
       <Footer />
     </div>

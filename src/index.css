@@ -13,3 +13,6 @@ code {
   display: ;
   text-align: center;
 }
+.nav-bar {
+  display: flex ;
+}
