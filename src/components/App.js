@@ -1,5 +1,5 @@
 import React from 'react';
-import MyInfo from './MyInfo'
+import TodoItem from './TodoItem'
 import Nav from './Nav'
 import Footer from './Footer';
 //import './App.css';
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <MyInfo />
+      <TodoItem />
       <Footer />
     </div>
   );
