@@ -2,7 +2,7 @@ import React from "react";
 
 function TodoItem() {
     return (
-      <div>
+      <div> 
       <input type="checkbox" />
       <p>Placeholder text here</p>
 
