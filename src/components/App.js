@@ -3,7 +3,7 @@ import MyInfo from './MyInfo'
 import Nav from './Nav'
 import Footer from './Footer';
 //import './App.css';
-
+//App function
 function App() {
   
   return (
