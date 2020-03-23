@@ -19,6 +19,11 @@ code {
 .nav-bar {
   display: flex ;
   background-color: green;
-  margin: 2px ;
-  
+  margin: 2px;
+  color: white;
+
+}
+.nav-bar .nav-li {
+  display: flex;
+text-align: end;
 }
