@@ -10,9 +10,15 @@ code {
     monospace;
 }
 .Todo-list {
-  display: ;
+  background-color: chocolate;
+  margin: 20px;
   text-align: center;
+  padding: 2px;
+  border-radius: 20px;
 }
 .nav-bar {
   display: flex ;
+  background-color: green;
+  margin: 2px ;
+  
 }
