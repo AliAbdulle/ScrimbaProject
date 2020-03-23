@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <TodoItem />
+      <TodoItem className="Todo-list"/>
       <Footer />
     </div>
   );
