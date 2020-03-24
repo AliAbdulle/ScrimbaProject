@@ -3,7 +3,7 @@ body {
 }
 
 .Todo-item {
-  background-color: white;
+  background-color: yellow;
   margin: auto;
   width: 50%;
   display: flex;
@@ -29,7 +29,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding: 30px 20px 0;
-  width: 70%;
+  width: 90%;
+  height: 70%;
   border-bottom: 1px solid #cecece;
   font-family: Roboto, sans-serif;
   font-weight: 100;
@@ -44,4 +45,11 @@ input[type=checkbox] {
 
 input[type=checkbox]:focus {
   outline: 0;
+}
+.nav-bar {
+  display: flex;
+  background-color: yellowgreen;
+  max-width: 10px 20px;
+  padding-bottom: 10px 10px;
+
 }
