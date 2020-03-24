@@ -53,3 +53,7 @@ input[type=checkbox]:focus {
   padding-bottom: 10px 10px;
 
 }
+.nav-li {
+  display: flex;
+  align-items: stretch;
+}
