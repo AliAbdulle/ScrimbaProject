@@ -2,15 +2,17 @@ import React from 'react';
 import TodoItem from './TodoItem'
 import Nav from './Nav'
 import Footer from './Footer';
+import ContactCard from './ContactCard';
 //import './App.css';
 //App function
 function App() {
 
   return (
+    <div>
     <div className="App">
       <Nav className="nav-bar"/>
       </div>
-      // {/* <TodoItem className="Todo-list"/> */}
+    {/* <TodoItem className="Todo-list"/> */}
       <div className="contacts">
             <ContactCard
                 name="Mr. Whiskerson"
@@ -39,9 +41,9 @@ function App() {
                 email="thecat@hotmail.com"
             />
 
-        </div>  
+        </div>
       <Footer />
-    </div>
+      </div>
   );
 }
 
