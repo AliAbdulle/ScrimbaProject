@@ -3,9 +3,9 @@ import React from 'react';
 import Nav from './Nav'
  import Footer from './Footer';
 // import ContactCard from './ContactCard';
-import Joke from './Joke';
-import JokesData from './JokesData';
-import ContactCard from './ContactCard';
+// import Joke from './Joke';
+// import JokesData from './JokesData';
+// import ContactCard from './ContactCard';
 //import './App.css';
 //App function
 function App() {
@@ -15,14 +15,15 @@ function App() {
       return (
         <div>
           <Nav />
-          <div className="contacts">
+          
+          {/* <div className="contacts">
             <ContactCard 
                 name="Mr. Whiskerson" 
                 imgUrl="http://placekitten.com/300/200" 
                 phone="(212) 555-1234" 
                 email="mr.whiskaz@catnap.meow"
             />
-
+  
             <ContactCard 
                 name="Fluffykins" 
                 imgUrl="http://placekitten.com/400/200" 
@@ -48,7 +49,7 @@ function App() {
         
         <div>
           {jokesComponents}
-        </div>
+        </div> */}
           <Footer />
         </div>
     
