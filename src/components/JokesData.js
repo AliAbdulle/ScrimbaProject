@@ -1,4 +1,4 @@
-const jokesData =[
+const JokesData =[
 
     {
         id: 1,
@@ -31,5 +31,5 @@ const jokesData =[
     }
 ]
 
-export default jokesData
+export default JokesData
 
