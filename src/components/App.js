@@ -3,20 +3,22 @@ import React from 'react';
 import Nav from './Nav'
  import Footer from './Footer';
 // import ContactCard from './ContactCard';
-// import Joke from './Joke';
-// import JokesData from './JokesData';
-// import ContactCard from './ContactCard';
+import Joke from './Joke';
+import JokesData from './JokesData';
+import ContactCard from './ContactCard';
+import Product from './Product';
+import productsData from './vschoolProducts';
 //import './App.css';
 //App function
 function App() {
 
-  const productsComponents =  productData.map(item => <Product key={item.id} product={product={item}}
+  const jokesComponents =  JokesData.map(joke => <Joke key={joke.id} question={joke.question}
     punchLine={joke.punchLine} />)
+  const productsComponents =  productsData.map(item => <Product key={item.id} product={item}/>)
       return (
         <div>
           <Nav />
-
-          {/* <div className="contacts">
+          <div className="contacts">
             <ContactCard 
                 name="Mr. Whiskerson" 
                 imgUrl="http://placekitten.com/300/200" 
@@ -49,7 +51,10 @@ function App() {
         
         <div>
           {jokesComponents}
-        </div> */}
+        </div>
+        <div>
+          {productsComponents}
+        </div>
           <Footer />
         </div>
     
