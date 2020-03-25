@@ -10,12 +10,12 @@ import Nav from './Nav'
 //App function
 function App() {
 
-  const jokesComponents =  JokesData.map(joke => <Joke key={joke.id} question={joke.question}
+  const productsComponents =  productData.map(item => <Product key={item.id} product={product={item}}
     punchLine={joke.punchLine} />)
       return (
         <div>
           <Nav />
-          
+
           {/* <div className="contacts">
             <ContactCard 
                 name="Mr. Whiskerson" 
