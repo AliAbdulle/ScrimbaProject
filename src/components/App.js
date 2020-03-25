@@ -1,5 +1,5 @@
 import React from 'react';
-//import TodoItem from './TodoItem'
+import TodoItem from './TodoItem'
 import Nav from './Nav'
  import Footer from './Footer';
 // import ContactCard from './ContactCard';
