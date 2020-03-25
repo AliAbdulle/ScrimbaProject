@@ -1,5 +1,5 @@
 import React from 'react'
-import JokesData from './JokesData';
+//import JokesData from './JokesData';
 
 function Joke(props){
     return (
