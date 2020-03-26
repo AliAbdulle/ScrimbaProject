@@ -7,6 +7,7 @@ class Apps extends Component {
             count: 0
         }
         this.handleClick = this.handleClick.bind(this)
+        this.handleClicked = this.handleClicked.bind(this)
     }
     
     handleClick() {
@@ -16,11 +17,19 @@ class Apps extends Component {
             }
         })
     }
+    handleClicked() {
+        this.setState(prevState => {
+            return {
+                count: prevState.count - 1
+            }
+        })
+    }
     render() {
         return(
             <div>
                 <h1>{this.state.count}</h1>
                 <button onClick={this.handleClick}>Change!</button>
+                <button onClick={this.handleClicked}>Nagative!</button>
             </div>
         )
     }
