@@ -60,13 +60,20 @@ class Apps extends Component {
             color: ""
         }
         this.handleClick = this.handleClick.bind(this)
-        // this.handleClicked = this.handleClicked.bind(this)
+        this.handleClicked = this.handleClicked.bind(this)
     }
     
     handleClick() {
         this.setState(prevState => {
             return {
                 count: prevState.count + 1
+            }
+        })
+    }
+    handleClicked() {
+        this.setState(prevState => {
+            return {
+                count: prevState.count - 1
             }
         })
     }
@@ -80,13 +87,6 @@ class Apps extends Component {
     }
 
 
-    // handleClicked() {
-    //     this.setState(prevState => {
-    //         return {
-    //             count: prevState.count - 1
-    //         }
-    //     })
-    // }
     render() {
         return(
             <div>
