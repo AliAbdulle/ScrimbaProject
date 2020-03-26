@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Apps from './components/Apps';
+import Tapps from './components/Tapps';
+// import Apps from './components/Apps';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-<Apps />, document.getElementById('root'));
+<Tapps />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

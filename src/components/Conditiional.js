@@ -1,22 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-class Conditional extends Component {
-    constructor(){
-        super()
-        this.state = {
-            isLoading: true
-        }
-    }
-     componentDidMount(){
-         setTimeout(() => {
-            this.setState({
-                isLoading: false
-            })
-         })
-     }
-
+function Conditional(props) {
+    return (
+        <h1> Hello</h1>
+    )
 }
-
 
 export default Conditional;
