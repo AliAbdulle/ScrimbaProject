@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Conditional from './Conditiional';
+import Conditional from './Conditional';
 
 
 class Tapps extends Component {
@@ -20,7 +20,7 @@ class Tapps extends Component {
      render(){
          return(
              <div>
-                 <Tapps isLoading={this.state.isLoading} />
+                 <Conditional isLoading={this.state.isLoading} />
              </div>
          )
      }
