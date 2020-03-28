@@ -6,12 +6,22 @@ class Login extends Component {
         this.state = {
             isLoggedIn : true
         }
+        this.handleChanged = this.handleChanged.bind(this)
+    }
+    handleChanged(){
+        this.setState(prevState => {
+                return{
+                    isLoggedIn: !prevState.isLoggedIn
+                }
+        })
     }
 
     render(){
+        let textWritten = this.state.isLoggedIn ? "Logout" : "Login"
         return (
             <div>
-                <button className="log">Log In</button>
+                <button className="log" onClick={this.handleChanged}>{textWritten}</button>
+                
             </div>
         )
     }
