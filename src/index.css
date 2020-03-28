@@ -80,3 +80,8 @@ input[type=checkbox]:focus {
 .contact-card > p {
   font-size: 12px;
 }
+.log {
+  background-color: Blue;
+  color: white;
+  height: 70px; width: 150px ;
+}
