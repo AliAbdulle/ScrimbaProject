@@ -5,10 +5,10 @@ import './index.css';
 // import Apps from './components/Apps';
 import * as serviceWorker from './serviceWorker';
 //import Login from './components/Login';
-import AppAPI from './components/AppAPI';
+import Appapi from './components/Appapi';
 
 ReactDOM.render(
-<AppAPI />, document.getElementById('root'));
+<Appapi />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
