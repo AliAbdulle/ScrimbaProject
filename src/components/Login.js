@@ -23,7 +23,6 @@ class Login extends Component {
             <div>
                 <button className="log" onClick={this.handleChanged}>{textWritten}</button>
                  <h1>{textDisplay}</h1>
-                
             </div>
         )
     }
