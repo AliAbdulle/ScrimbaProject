@@ -18,12 +18,14 @@ class App extends Component {
       todos: todosData
     };
   }
+
+  //render file
   render() {
     const todoItems = todosData.map(item => (
       <TodoItem key={item.id} item={item} />
     ));
     const jokesComponents = JokesData.map(joke => (
-      <Joke key={joke.id} question={joke.question} punchLine={joke.punchLine} />
+      <Joke key={joke.id} question={joke.question} punchLine={joke.punchLine} />// log
     ));
     const productsComponents = productsData.map(item => (
       <Product key={item.id} product={item} />
