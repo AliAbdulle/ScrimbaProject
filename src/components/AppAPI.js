@@ -16,7 +16,8 @@ class Appapi extends Component {
         .then(data => {
             this.setState({
                 loading: false,
-                character: data
+                character: data,
+                sales: ""
             })
         })
     }
