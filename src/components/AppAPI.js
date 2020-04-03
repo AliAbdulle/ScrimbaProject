@@ -8,7 +8,11 @@ class Appapi extends Component {
             character: {}
         }
     }
+<<<<<<< HEAD
     //loaded the data
+=======
+    // components added data
+>>>>>>> 46fe2139efdc272e7b14e5d16506f4f25bf982e2
     componentDidMount() {
         this.setState({loading: true})
         fetch("https://swapi.co/api/people/1")

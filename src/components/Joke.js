@@ -1,6 +1,6 @@
 import React from 'react'
 //import JokesData from './JokesData';
-
+// function didplays props
 function Joke(props){
     return (
         <div> 

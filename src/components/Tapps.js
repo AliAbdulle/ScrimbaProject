@@ -9,6 +9,7 @@ class Tapps extends Component {
             isLoading: true
         }
     }
+    // cponenets did mount loaded the page
      componentDidMount(){
          setTimeout(() => {
             this.setState({
