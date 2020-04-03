@@ -1,31 +1,55 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Form extends Component {
-    constructor(){
-        super()
+  constructor() {
+    super();
     this.state = {
-        firstName : "",
-        lastName:""
-     }
-     this.handleChange = this.handleChange.bind(this)
-    }
+      firstName: "",
+      lastName: "",
+      isFriendly: false
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
 
-     handleChange(event) {
-         this.setState({
-             [event.target.name]: event.target.value
-         })
-     }
-    render() { 
-        return ( 
-            <form>
-                <input type="text" name="firstName" placeholder="First Name" onChange={this.handleChange}/>
-                <input type="text" name="lastName"placeholder="Last Name" onChange={this.handleChange}/>
-                <br />
-                <h1>{this.state.firstName}</h1>
-                <h1>{this.state.lastName}</h1>
-            </form>
-         );
-    }
+  handleChange(event) {
+    const { name, value, type, checked } = event.target;
+    type === "checked" ? this.setState({ [name]: checked}) : this.setState({
+      [name]: value
+    });
+  }
+  render() {
+    return (
+      <form>
+        <input
+          type="text"
+          value={this.state.firstName}
+          name="firstName"
+          placeholder="First Name"
+          onChange={this.handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          value={this.state.lastName}
+          name="lastName"
+          placeholder="Last Name"
+          onChange={this.handleChange}
+        />
+        <br />
+        <textarea value={"Some default value"} />
+        <br />
+        <label>
+          <input
+            type="checked"
+            name="isFriendly"
+            checked={this.state.isFriendly}
+            onChange={this.handleChange}
+          />
+          Is Friendly
+        </label>
+      </form>
+    );
+  }
 }
- 
+
 export default Form;
