@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 
 class Form extends Component {
-    state = {  }
+    state = { 
+        firstName : ""
+     }
     render() { 
-        return (  );
+        return ( 
+            <form>
+                <input type="text" placeholder="First Name" />
+            </form>
+         );
     }
 }
  
