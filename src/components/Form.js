@@ -36,11 +36,14 @@ class Form extends Component {
           onChange={this.handleChange}
         />
         <br />
-        <textarea value={"Some default value"} />
+        <textarea 
+            value={"Some default value"}
+            onChange={this.handleChange}
+         />
         <br />
         <label>
           <input
-            type="checked"
+            type="checkbox"
             name="isFriendly"
             checked={this.state.isFriendly}
             onChange={this.handleChange}
