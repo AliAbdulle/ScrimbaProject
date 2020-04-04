@@ -3,6 +3,7 @@ import React, { Component } from "react";
 class Form extends Component {
   constructor() {
     super();
+    //State to checked
     this.state = {
       firstName: "",
       lastName: "",
@@ -20,7 +21,7 @@ class Form extends Component {
     });
   }
   handleSubmit(){
-      
+
   }
   render() {
     return (
