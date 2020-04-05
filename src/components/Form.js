@@ -11,6 +11,7 @@ class Form extends Component {
       gender: "", 
       favColor: ""
     };
+    //invoke status of the state
     this.handleChange = this.handleChange.bind(this);
   }
 
