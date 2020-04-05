@@ -77,6 +77,7 @@ class Form extends Component {
           Female
         </label>
         <br />
+        {/* Select box */}
         <label>
           <select
             value={this.state.favColor}
