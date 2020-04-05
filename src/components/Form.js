@@ -87,6 +87,7 @@ class Form extends Component {
             <option value="green">Green</option>
             <option value="red">Red</option>
             <option value="yellow">Yellow</option>
+            <option value="yellow">Orange</option>
           </select>
         </label>
         <h1>{this.state.firstName} {this.state.lastName}</h1>
