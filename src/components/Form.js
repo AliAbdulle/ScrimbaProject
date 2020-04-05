@@ -14,7 +14,7 @@ class Form extends Component {
     //invoke status of the state
     this.handleChange = this.handleChange.bind(this);
   }
-
+//conditional display the checkbox
   handleChange(event) {
     const { name, value, type, checked } = event.target;
     type === "checked" ? this.setState({ [name]: checked}) : this.setState({
