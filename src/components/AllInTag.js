@@ -46,6 +46,7 @@ class AllInTag extends Component {
             placeholder="Age"
           />
           <br />
+          {/* Create radio buttons for gender here */}
           <label>
               <input type="radio"
               name="gender"
@@ -63,11 +64,17 @@ class AllInTag extends Component {
               onChange={this.handleChange}
               /> Female
           </label>
-
-          {/* Create radio buttons for gender here */}
           <br />
-
           {/* Create select box for location here */}
+          <select value="">
+                <option value="germany"></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+
+          </select>
           <br />
 
           {/* Create check boxes for dietary restrictions here */}
