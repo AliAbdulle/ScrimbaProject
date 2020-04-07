@@ -1,52 +1,74 @@
-import React, { Component } from 'react'
-
+import React, { Component } from "react";
 
 class AllInTag extends Component {
-    constructor() {
-        super()
-        this.state = {
-            firstName: "",
-            lastName: "",
-            age: 0,
-            gender: "",
-            destination: "",
-            dietaryRestrictions: []
-        }
-    }
+  constructor() {
+    super();
+    this.state = {
+      firstName: "",
+      lastName: "",
+      age: 0,
+      gender: "",
+      destination: "",
+      dietaryRestrictions: [],
+    };
+    this.handleChange = this.handleChange.bind(this)
+  }
 
-    render() {
-        return (
-            <main>
-                <form>
-                    <input name="First Name" valu={this.state.firstName} onChange={this.handleChange} placeholder="First Name" /><br />
-                    <input name="Last Name" valu={this.state.lastName} onChange={this.handleChange} placeholder="Last Name" /><br />
-                    <input name="Age" valu={this.state.age} onChange={this.handleChange} placeholder="Age" /><br />
+  handleChange(event) {
+      const {name, value} = event.target
 
-                    {/* Create radio buttons for gender here */}
-                    <br />
+  }
 
-                    {/* Create select box for location here */}
-                    <br />
+  render() {
+    return (
+      <main>
+        <form>
+          <input
+            name="First Name"
+            valu={this.state.firstName}
+            onChange={this.handleChange}
+            placeholder="First Name"
+          />
+          <br />
+          <input
+            name="Last Name"
+            valu={this.state.lastName}
+            onChange={this.handleChange}
+            placeholder="Last Name"
+          />
+          <br />
+          <input
+            name="Age"
+            valu={this.state.age}
+            onChange={this.handleChange}
+            placeholder="Age"
+          />
+          <br />
 
-                    {/* Create check boxes for dietary restrictions here */}
-                    <br />
+          {/* Create radio buttons for gender here */}
+          <br />
 
-                    <button>Submit</button>
-                </form>
-                <hr />
-                <h2>Entered information:</h2>
-                <p>Your name: {/* First and last name here */}</p>
-                <p>Your age: {/* Age here */}</p>
-                <p>Your gender: {/* Gender here */}</p>
-                <p>Your destination: {/* Destination here */}</p>
-                <p>
-                    Your dietary restrictions:
-                    {/* Dietary restrictions here, comma separated */}
-                </p>
-            </main>
-        )
-    }
+          {/* Create select box for location here */}
+          <br />
+
+          {/* Create check boxes for dietary restrictions here */}
+          <br />
+
+          <button>Submit</button>
+        </form>
+        <hr />
+        <h2>Entered information:</h2>
+        <p>Your name: {/* First and last name here */}</p>
+        <p>Your age: {/* Age here */}</p>
+        <p>Your gender: {/* Gender here */}</p>
+        <p>Your destination: {/* Destination here */}</p>
+        <p>
+          Your dietary restrictions:
+          {/* Dietary restrictions here, comma separated */}
+        </p>
+      </main>
+    );
+  }
 }
-
 
 export default AllInTag;
