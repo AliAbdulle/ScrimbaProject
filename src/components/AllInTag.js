@@ -2,24 +2,24 @@ import React, { Component } from "react";
 
 class AllInTag extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
-        firstName: "",
-        lastName: "",
-        age: "",
-        gender: "",
-        destination: "",
-        dietaryRestrictions: []
+      firstName: "",
+      lastName: "",
+      age: "",
+      gender: "",
+      destination: "",
+      dietaryRestrictions: [],
     };
-    this.handleChange = this.handleChange.bind(this)
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
-    const {name, value} = event.target
+    const { name, value } = event.target;
     this.setState({
-        [name]: value
-    })
-}
+      [name]: value,
+    });
+  }
 
   render() {
     return (
@@ -48,32 +48,40 @@ class AllInTag extends Component {
           <br />
           {/* Create radio buttons for gender here */}
           <label>
-              <input type="radio"
+            <input
+              type="radio"
               name="gender"
               value="male"
               checked={this.state.gender === "male"}
               onChange={this.handleChange}
-              /> Male
+            />{" "}
+            Male
           </label>
           <br />
           <label>
-              <input type="radio" 
+            <input
+              type="radio"
               name="gender"
               value="female"
               checked={this.state.gender === "female"}
               onChange={this.handleChange}
-              /> Female
+            />{" "}
+            Female
           </label>
           <br />
           {/* Create select box for location here */}
-          <select value="">
-                <option value="germany"></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-
+          <select
+            value={this.state.destination}
+            name="destination"
+            onChange={this.handleChange}
+          >
+            <option value="">-- Please Choose a destination --</option>
+            <option value="usa">USA</option>
+            <option value="somali">Somalia</option>
+            <option value="kenya">Kenya</option>
+            <option value="germany">Germany</option>
+            <option value="england">England</option>
+            <option value="denmark">Denmark</option>
           </select>
           <br />
 
@@ -84,10 +92,12 @@ class AllInTag extends Component {
         </form>
         <hr />
         <h2>Entered information:</h2>
-    <p>Your name: {this.state.firstName} {this.state.lastName}</p>
+        <p>
+          Your name: {this.state.firstName} {this.state.lastName}
+        </p>
         <p>Your age: {this.state.age}</p>
         <p>Your gender: {this.state.gender}</p>
-        <p>Your destination: {/* Destination here */}</p>
+        <p>Your destination: {this.state.destination}</p>
         <p>
           Your dietary restrictions:
           {/* Dietary restrictions here, comma separated */}
