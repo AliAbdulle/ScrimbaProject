@@ -6,7 +6,7 @@ class AllInTag extends Component {
     this.state = {
         firstName: "",
         lastName: "",
-        age: 0,
+        age: "",
         gender: "",
         destination: "",
         dietaryRestrictions: []
@@ -26,21 +26,21 @@ class AllInTag extends Component {
       <main>
         <form>
           <input
-            name="FirstName"
+            name="firstName"
             value={this.state.firstName}
             onChange={this.handleChange}
             placeholder="First Name"
           />
           <br />
           <input
-            name="LastName"
+            name="lastName"
             value={this.state.lastName}
             onChange={this.handleChange}
             placeholder="Last Name"
           />
           <br />
           <input
-            name="Age"
+            name="age"
             value={this.state.age}
             onChange={this.handleChange}
             placeholder="Age"
@@ -61,7 +61,7 @@ class AllInTag extends Component {
         <hr />
         <h2>Entered information:</h2>
     <p>Your name: {this.state.firstName} {this.state.lastName}</p>
-        <p>Your age: {/* Age here */}</p>
+        <p>Your age: {this.state.age}</p>
         <p>Your gender: {/* Gender here */}</p>
         <p>Your destination: {/* Destination here */}</p>
         <p>
