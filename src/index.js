@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 //import Login from './components/Login';
 //import Appapi from './components/Appapi';
 //import Form from './components/Form';
-import AllInTag from './components/AllInTag'
+import AllInTag from './components/AllInTag';
 //App Render
 ReactDOM.render(
 <AllInTag />, document.getElementById('root'));

@@ -2,44 +2,46 @@ import React, { Component } from "react";
 
 class AllInTag extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
-      firstName: "",
-      lastName: "",
-      age: 0,
-      gender: "",
-      destination: "",
-      dietaryRestrictions: [],
+        firstName: "",
+        lastName: "",
+        age: 0,
+        gender: "",
+        destination: "",
+        dietaryRestrictions: []
     };
     this.handleChange = this.handleChange.bind(this)
   }
 
   handleChange(event) {
-      const {name, value} = event.target
-
-  }
+    const {name, value} = event.target
+    this.setState({
+        [name]: value
+    })
+}
 
   render() {
     return (
       <main>
         <form>
           <input
-            name="First Name"
-            valu={this.state.firstName}
+            name="FirstName"
+            value={this.state.firstName}
             onChange={this.handleChange}
             placeholder="First Name"
           />
           <br />
           <input
-            name="Last Name"
-            valu={this.state.lastName}
+            name="LastName"
+            value={this.state.lastName}
             onChange={this.handleChange}
             placeholder="Last Name"
           />
           <br />
           <input
             name="Age"
-            valu={this.state.age}
+            value={this.state.age}
             onChange={this.handleChange}
             placeholder="Age"
           />
@@ -58,7 +60,7 @@ class AllInTag extends Component {
         </form>
         <hr />
         <h2>Entered information:</h2>
-        <p>Your name: {/* First and last name here */}</p>
+    <p>Your name: {this.state.firstName} {this.state.lastName}</p>
         <p>Your age: {/* Age here */}</p>
         <p>Your gender: {/* Gender here */}</p>
         <p>Your destination: {/* Destination here */}</p>
