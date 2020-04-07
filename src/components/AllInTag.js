@@ -9,7 +9,11 @@ class AllInTag extends Component {
       age: "",
       gender: "",
       destination: "",
-      dietaryRestrictions: [],
+      dietaryRestrictions: {
+        isVegan: false,
+        isKosher: false,
+        isLactoseFree: false
+      }
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -83,9 +87,34 @@ class AllInTag extends Component {
             <option value="england">England</option>
             <option value="denmark">Denmark</option>
           </select>
-          <br />
-
           {/* Create check boxes for dietary restrictions here */}
+          <br />
+          <label>
+              <input
+              type="checkbox"
+              name="isVegan"
+              onChange={this.handleChange}
+              checked={this.state.dietaryRestrictions.isVegan}
+              /> Vegan
+          </label>
+          <br />
+          <label>
+              <input
+              type="checkbox"
+              name="isKosher"
+              onChange={this.handleChange}
+              checked={this.state.dietaryRestrictions.isKosher}
+              /> Kosher
+          </label>
+          <br />
+          <label>
+              <input
+              type="checkbox"
+              name="isLactoseFree"
+              onChange={this.handleChange}
+              checked={this.state.dietaryRestrictions.isLactoseFree}
+              /> Lactose Free
+          </label>
           <br />
 
           <button>Submit</button>
