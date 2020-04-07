@@ -6,31 +6,31 @@ class AllInTag extends Component {
         super()
         this.state = {
             firstName: "",
-            lastName:"",
+            lastName: "",
             age: 0,
             gender: "",
             destination: "",
             dietaryRestrictions: []
         }
     }
-    
+
     render() {
         return (
             <main>
                 <form>
-                    <input name="" valu={this.state.???} onChange={this.handleChange }placeholder="First Name" /><br />
-                    <input name="" valu={this.state.???} onChange={this.handleChange }placeholder="Last Name" /><br />
-                    <input name="" valu={this.state.???} onChange={this.handleChange }placeholder="Age" /><br />
-                    
+                    <input name="First Name" valu={this.state.firstName} onChange={this.handleChange} placeholder="First Name" /><br />
+                    <input name="Last Name" valu={this.state.lastName} onChange={this.handleChange} placeholder="Last Name" /><br />
+                    <input name="Age" valu={this.state.age} onChange={this.handleChange} placeholder="Age" /><br />
+
                     {/* Create radio buttons for gender here */}
                     <br />
-                    
+
                     {/* Create select box for location here */}
                     <br />
-                    
+
                     {/* Create check boxes for dietary restrictions here */}
                     <br />
-                    
+
                     <button>Submit</button>
                 </form>
                 <hr />
@@ -40,7 +40,7 @@ class AllInTag extends Component {
                 <p>Your gender: {/* Gender here */}</p>
                 <p>Your destination: {/* Destination here */}</p>
                 <p>
-                    Your dietary restrictions: 
+                    Your dietary restrictions:
                     {/* Dietary restrictions here, comma separated */}
                 </p>
             </main>
