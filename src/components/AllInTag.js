@@ -7,7 +7,10 @@ class AllInTag extends Component {
         this.state = {
             firstName: "",
             lastName:"",
-            age: 0
+            age: 0,
+            gender: "",
+            destination: "",
+            dietaryRestrictions: []
         }
     }
     
@@ -15,9 +18,9 @@ class AllInTag extends Component {
         return (
             <main>
                 <form>
-                    <input placeholder="First Name" /><br />
-                    <input placeholder="Last Name" /><br />
-                    <input placeholder="Age" /><br />
+                    <input name="" valu={this.state.???} onChange={this.handleChange }placeholder="First Name" /><br />
+                    <input name="" valu={this.state.???} onChange={this.handleChange }placeholder="Last Name" /><br />
+                    <input name="" valu={this.state.???} onChange={this.handleChange }placeholder="Age" /><br />
                     
                     {/* Create radio buttons for gender here */}
                     <br />
