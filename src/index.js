@@ -6,10 +6,11 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 //import Login from './components/Login';
 //import Appapi from './components/Appapi';
-import Form from './components/Form';
+//import Form from './components/Form';
+import AllInTag from './components/AllInTag'
 //App Render
 ReactDOM.render(
-<Form />, document.getElementById('root'));
+<AllInTag />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

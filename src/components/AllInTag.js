@@ -4,7 +4,11 @@ import React, { Component } from 'react'
 class AllInTag extends Component {
     constructor() {
         super()
-        this.state = {}
+        this.state = {
+            firstName: "",
+            lastName:"",
+            age: 0
+        }
     }
     
     render() {
