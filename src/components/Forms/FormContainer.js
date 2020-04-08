@@ -33,7 +33,7 @@ class FormContainer extends Component {
     return(
     <FormComponents
       handleChange={this.handleChange}
-      {...this.data}
+      data={this.state}
     />
     )
   }

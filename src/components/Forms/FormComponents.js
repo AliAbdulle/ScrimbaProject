@@ -6,21 +6,21 @@ function FormComponents(props) {
       <form>
         <input
           name="firstName"
-          value={props.firstName}
+          value={props.data.firstName}
           onChange={props.handleChange}
           placeholder="First Name"
         />
         <br />
         <input
           name="lastName"
-          value={props.lastName}
+          value={props.data.lastName}
           onChange={props.handleChange}
           placeholder="Last Name"
         />
         <br />
         <input
           name="age"
-          value={props.age}
+          value={props.data.age}
           onChange={props.handleChange}
           placeholder="Age"
         />
@@ -31,7 +31,7 @@ function FormComponents(props) {
             type="radio"
             name="gender"
             value="male"
-            checked={props.gender === "male"}
+            checked={props.data.gender === "male"}
             onChange={props.handleChange}
           />{" "}
           Male
@@ -42,7 +42,7 @@ function FormComponents(props) {
             type="radio"
             name="gender"
             value="female"
-            checked={props.gender === "female"}
+            checked={props.data.gender === "female"}
             onChange={props.handleChange}
           />{" "}
           Female
@@ -50,7 +50,7 @@ function FormComponents(props) {
         <br />
         {/* Create select box for location here */}
         <select
-          value={props.destination}
+          value={props.data.destination}
           name="destination"
           onChange={props.handleChange}
         >
@@ -69,7 +69,7 @@ function FormComponents(props) {
             type="checkbox"
             name="isVegan"
             onChange={props.handleChange}
-            checked={props.isVegan}
+            checked={props.data.isVegan}
           />{" "}
           Vegan?
         </label>
@@ -79,7 +79,7 @@ function FormComponents(props) {
             type="checkbox"
             name="isKosher"
             onChange={props.handleChange}
-            checked={props.isKosher}
+            checked={props.data.isKosher}
           />{" "}
           Kosher?
         </label>
@@ -89,7 +89,7 @@ function FormComponents(props) {
             type="checkbox"
             name="isLactoseFree"
             onChange={props.handleChange}
-            checked={props.isLactoseFree}
+            checked={props.data.isLactoseFree}
           />{" "}
           Lactose Free?
         </label>
@@ -100,16 +100,16 @@ function FormComponents(props) {
       <hr />
       <h2>Entered information:</h2>
       <p>
-        Your name: {props.firstName} {props.lastName}
+        Your name: {props.data.firstName} {props.data.lastName}
       </p>
-      <p>Your age: {props.age}</p>
-      <p>Your gender: {props.gender}</p>
-      <p>Your destination: {props.destination}</p>
+      <p>Your age: {props.data.age}</p>
+      <p>Your gender: {props.data.gender}</p>
+      <p>Your destination: {props.data.destination}</p>
       {/* Dietary restrictions here, comma separated */}
       <p>Your dietary restrictions:</p>
-      <p>Vegan: {props.isVegan ? "Yes" : "No"}</p>
-      <p>Kosher: {props.isKosher ? "Yes" : "No"}</p>
-      <p>Lactose Free: {props.isLactoseFree ? "Yes" : "No"}</p>
+      <p>Vegan: {props.data.isVegan ? "Yes" : "No"}</p>
+      <p>Kosher: {props.data.isKosher ? "Yes" : "No"}</p>
+      <p>Lactose Free: {props.data.isLactoseFree ? "Yes" : "No"}</p>
     </main>
   );
 }
