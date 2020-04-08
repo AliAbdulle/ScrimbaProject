@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/Project/App';
 //import Tapps from './components/Tapps';
 // import Apps from './components/Apps';
 //import Login from './components/Login';
@@ -9,6 +8,7 @@ import App from './components/Project/App';
 //import Form from './components/Form';
 //import AllInTag from './components/Forms/AllInTag';
 import * as serviceWorker from './serviceWorker';
+import App from './components/Project/App';
 //App Render
 ReactDOM.render(
 <App />, document.getElementById('root'));
