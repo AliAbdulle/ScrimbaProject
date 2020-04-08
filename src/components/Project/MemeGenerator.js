@@ -24,7 +24,13 @@ class MemeGenerator extends Component {
 
     render() {
         return (
-            <h1>MEME GENERATOR SECTION</h1>
+            <div>
+                <form className="meme-form">
+
+                <button>Gen</button>
+                </form>
+            </div>
+
         )
     }
 }
