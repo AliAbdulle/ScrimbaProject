@@ -21,7 +21,7 @@ class Appapi extends Component {
             })
         })
     }
-
+    //render file
     render(){
         const text =this.state.loading ? "loading...." : this.state.character.name
         return (
