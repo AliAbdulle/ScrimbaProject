@@ -7,8 +7,9 @@ import './index.css';
 //import Appapi from './components/Appapi';
 //import Form from './components/Form';
 //import AllInTag from './components/Forms/AllInTag';
+//import App from './components/Project/App';
 import * as serviceWorker from './serviceWorker';
-import App from './components/Project/App';
+import App from './components/Like/App';
 //App Render
 ReactDOM.render(
 <App />, document.getElementById('root'));

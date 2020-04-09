@@ -6,7 +6,16 @@ function App(){
     const [count, setCount] = useState(0)
     const [color, setColor] = useState("")
 
-    
+    function increment() {
+        setCount(PrevCount => PrevCount + 1)
+    }
+    function decrement() {
+        setCount(PrevCount => PrevCount - 1)
+    }
+    useEffect(() => {
+        setColor(randomColor())
+
+    }, [count]);
 
     return(
         <div>
